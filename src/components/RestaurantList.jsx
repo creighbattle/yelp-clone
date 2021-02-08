@@ -48,7 +48,8 @@ function RestaurantList(props) {
     console.log("running");
     try {
       const response = await RestaurantFinder.get("/");
-      setRestaurants(response.data.data.restaurants);
+      //setRestaurants(response.data.data.restaurants);
+      console.log(response);
     } catch (err) {
       console.log(`This is the error ${err}`);
     }
